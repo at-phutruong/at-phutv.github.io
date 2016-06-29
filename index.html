@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="UTF-8">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/app.css" charset="utf-8">
+  <script src="bower_components/angular/angular.min.js" charset="utf-8"></script>
+  <script src="bower_components/angular-route/angular-route.min.js" charset="utf-8"></script>
+  <script src="bower_components/angular-resource/angular-resource.min.js" charset="utf-8"></script>
+  <script src="js/app.js" charset="utf-8"></script>
+  <script src="js/controllers.js" charset="utf-8"></script>
+  <script src="js/services.js" charset="utf-8"></script>
+</head>
+<body>
+  <div class="container">
+    <div ng-controller="HeaderPartialCtrl">
+      <div ng-include src="'view/partial/header.html'"></div>
+    </div>
+    <div class="row">
+      <div ng-view></div>
+    </div>
+    <div ng-controller="FooterPartialCtrl">
+      <div ng-include src="'view/partial/footer.html'"></div>
+    </div>
+  </div>
+</body>
+</html>
