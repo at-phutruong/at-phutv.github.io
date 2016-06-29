@@ -1,0 +1,25 @@
+{
+  "name": "starter-app",
+  "version": "0.0.1",
+  "description": "The name is wfeApp, which is an AngularJS Tutorial Application.",
+  "authors": [
+    "Hung BCP"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/at-hungbcp/angular-starter-app",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test"
+  ],
+  "dependencies": {
+    "angular": "^1.5.0",
+    "angular-route": "^1.5.0",
+    "angular-loader": "^1.5.0",
+    "angular-mocks": "^1.5.0",
+    "angular-resource": "^1.5.0",
+    "bootstrap": "^3.3.6"
+  }
+}

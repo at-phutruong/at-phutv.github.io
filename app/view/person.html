@@ -1,0 +1,31 @@
+<!-- View partial for person details -->
+<div class="col-xs-6 col-xs-offset-3 col-md-2 col-md-offset-0">
+  <a href="#" class="thumbnail">
+    <img ng-src="{{person.image}}" alt="" class="img-responsive">
+  </a>
+</div>
+<div class="col-xs-12 col-md-10">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">{{person.fullName}}</h3>
+    </div>
+    <div class="panel-body">
+      <dl class="dl-horizontal">
+        <dt><span class="badge">@</span></dt>
+          <dd><span class="label label-primary">{{person.codeName}}</span></dd>
+        <dt>Employee Code</dt>
+          <dd><span class="label label-info">{{person.empCode}}</span></dd>
+        <dt>Job Title</dt>
+          <dd>{{person.jobTitle}}</dd>
+        <dt>Work Email</dt>
+          <dd>{{person.workEmail}}</dd>
+        <dt>Personal Email</dt>
+          <dd>{{person.personalEmail}}</dd>
+        <dt>Phone Number</dt>
+          <dd>{{person.phoneNumber}}</dd>
+        <dt>CV</dt>
+          <dd>{{person.cvUrl}}</dd>
+      </dl>
+    </div>
+  </div>
+</div>
