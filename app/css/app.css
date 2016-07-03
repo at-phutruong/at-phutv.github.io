@@ -1,5 +1,40 @@
 /* App stylesheet */
 
+
+a.page-scroll:hover {
+	color:#fff;
+}
+#about a:hover {
+	color:#fff;
+}
 body {
   padding-top: 20px;
+  background-color: #fff;
+  position: relative;
 }
+nav {
+	background-color: #000000;
+}
+
+.footer {
+	text-align: center;
+	width:100%;
+	padding: 8px;
+	margin: 0;
+	position: absolute;
+	background-color: #333;
+	color: #888;
+}
+.footer a {
+	color: #888;
+	font-size: 15px;
+	
+}
+html{
+	overflow-x: hidden;
+}
+
+
+
+
+

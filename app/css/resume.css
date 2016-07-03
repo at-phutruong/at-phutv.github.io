@@ -1,0 +1,156 @@
+
+body { 
+	font-family: Georgia; 
+	color: #444; 
+}
+#inner { 
+	padding: 10px 70px; 
+	margin: 80px 0 auto; 
+	background: #f5f5f5; 
+	width: 100%;
+	border-width: 8px 0 2px 0; 
+}
+
+
+/* //-- header-- */
+#hd {  
+	border-bottom: 1px #ccc 
+}
+#hd h1 { 
+	font-size: 48px; 
+	text-transform: uppercase; 
+	letter-spacing: 3px; 
+}
+#hd h2 { 
+	text-transform: uppercase; 
+	letter-spacing: 2px; 
+}
+
+
+
+/* //-- core typography and style -- */
+h2 { 
+	font-size: 152% 
+}
+h3, h4 { 
+	font-size: 122%; 
+}
+h1, h2, h3, h4 { 
+	color: #333; 
+}
+p { 
+	font-size: 100%; 
+	line-height: 18px; 
+	padding-right: 3em; 
+}
+a { 
+	color: #990003 
+}
+a:hover { 
+	text-decoration: none; 
+	color: #fff;
+}
+strong { 
+	font-weight: bold; 
+}
+li { 
+	line-height: 24px; 
+	border-bottom: 1px #ccc; 
+}
+p.enlarge { 
+	font-size: 144%; 
+	padding-right: 6.5em; 
+	line-height: 24px; 
+}
+p.enlarge span { 
+	color: #000 
+}
+
+.last { 
+	border-bottom: 0;
+	border: none;
+}
+
+
+/* //-- section styles -- */
+
+/*.job { 
+	position: relative; 
+	margin-bottom: 1em; 
+	padding-bottom: 1em; 
+	border-bottom: 1px solid #ccc; 
+}
+.job h4 { 
+	position: absolute; 
+	top: 0.35em; 
+	right: 0 
+}
+.job p { 
+	margin: 0.75em 0 3em 0; 
+}*/
+
+.col-4 { 
+	width: 25%; 
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+.col-3 { 
+	width: 33%; 
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+.box {
+	margin: 0 30px;
+	
+}
+#last {
+	border-bottom: 0;
+}
+.box ul{
+	list-style-type: none;
+}
+	.col-4 li {
+	line-height: 24px; 
+	border-bottom: 1px solid #ccc;
+}
+.title {
+	border-bottom: 1px solid #ccc;
+	font-style: italic;
+}
+.para {
+	margin-top: 10px;
+}
+.para p::first-letter {
+	  font-size: 33px;
+}
+
+
+/*---------------------------------------------------*/
+.logo {
+	float: right;
+}
+.name {
+	float: left;
+}
+
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+
+
