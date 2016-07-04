@@ -8,9 +8,13 @@ a.page-scroll:hover {
 	color:#fff;
 }
 body {
+
   padding-top: 20px;
   background-color: #fff;
-  position: relative;
+  position: static;
+  min-height:100%;
+  width: 100%;
+
 }
 nav {
 	background-color: #000000;
@@ -21,20 +25,23 @@ nav {
 	width:100%;
 	padding: 8px;
 	margin: 0;
-	position: absolute;
 	background-color: #333;
 	color: #888;
+    position: absolute;
 }
 .footer a {
 	color: #888;
 	font-size: 15px;
-	
+
 }
-html{
+html {
 	overflow-x: hidden;
 }
 
-
+.icon {
+	height: 13px;
+	width: 13px;
+}
 
 
 

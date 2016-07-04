@@ -1,6 +1,6 @@
 
 input[type=search] {
-	background: #ededed url(http://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+	background: #ededed url(/img/search.png) no-repeat 9px center;
 	border: solid 1px #ccc;
 	padding: 9px 5px 9px 32px;
 	width: 150px;
@@ -14,7 +14,7 @@ input[type=search] {
 	transition: all .5s;
 }
 input[type=search]:focus {
-	width: 400px;
+	width: 350px;
 	background-color: #fff;
 	border-color: #66CC75;
 	

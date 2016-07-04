@@ -1,0 +1,51 @@
+ <div id='rss' class="container-fluid" data-ng-controller="FeedCtrl">
+      <div>
+          <div class="container">
+            <h4>Feed RSS via AngularJS</h4>
+ 
+            <form>
+              <div class="input-prepend">
+                <div class="btn-group">
+                  <button class="btn btn-primary" type="button" tabindex="-1" ng-click="loadFeed($event)">{{loadBtnText}}</button>
+                  <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" tabindex="-1">
+                    <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#/rss" ng-click="feedSrc='http://feeds.bbci.co.uk/news/world/rss.xml';loadFeed($event)">BBC News</a></li>
+                    <li><a href="#/rss" ng-click="feedSrc='http://feeds.feedburner.com/TEDTalks_video';loadFeed($event)">TED videos</a></li>
+                    <li><a href="#/rss" ng-click="feedSrc='http://feeds.nationalgeographic.com/ng/photography/photo-of-the-day/';loadFeed($event);">NEO photos</a></li>
+                    <li><a href="#/rss" ng-click="feedSrc='http://www.nytimes.com/services/xml/rss/nyt/HomePage.xml';loadFeed($event)">NYTimes News</a></li>
+                  </ul>
+                </div>
+                <input type="search" class="span6" autocomplete="off" placeholder="Enter feed URL" data-ng-model="feedSrc" />
+                <input type="search" placeholder="Search" data-ng-model="filterText">
+              </div>
+              <div class=" pull-right">
+                  
+              </div>
+            </form>
+          </div>
+        
+          <div class="container">
+              <ul class="unstyled">
+                  <span class="label label-warning" ng-show="feeds.length > 0">{{(feeds | filter:filterText).length}} Articles</span>
+                                    
+                  <li ng-repeat="feed in feeds | filter:filterText" class="item">
+                    <div class="panel panel-primary">
+                      <div class="panel-heading">
+                        <h3 class="panel-title">{{feed.title}}</h3>
+                      </div>
+                      <div class="panel-body">
+                        <h5><a target='_blank' href="{{feed.link}}"><b class="text-primary"><img class="icon" src="img/link.png">&nbsp;Link:&nbsp;&nbsp;</b>{{feed.link}}</a></h5>
+                        <p class="text-left text-danger"><b class="text-primary"><img class="icon" src="img/author.png">&nbsp;Author:&nbsp;&nbsp;</b>{{feed.author}}</p>
+                        <p class="text-left text-danger"><b class="text-primary"><img class="icon" src="img/content.png">&nbsp;Content:&nbsp;&nbsp;</b>{{feed.contentSnippet}}</p>
+                      </div>
+                      <div class="panel-footer">
+                        <span class="small">{{feed.publishedDate}}</span>
+                      </div>
+                    </div>
+                  </li>              
+              </ul>            
+          </div>
+      </div>
+  </div>

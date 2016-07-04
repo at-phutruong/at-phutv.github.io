@@ -48,7 +48,7 @@ a {
 }
 a:hover { 
 	text-decoration: none; 
-	color: #fff;
+	color: #428bca;
 }
 strong { 
 	font-weight: bold; 
@@ -70,24 +70,6 @@ p.enlarge span {
 	border-bottom: 0;
 	border: none;
 }
-
-
-/* //-- section styles -- */
-
-/*.job { 
-	position: relative; 
-	margin-bottom: 1em; 
-	padding-bottom: 1em; 
-	border-bottom: 1px solid #ccc; 
-}
-.job h4 { 
-	position: absolute; 
-	top: 0.35em; 
-	right: 0 
-}
-.job p { 
-	margin: 0.75em 0 3em 0; 
-}*/
 
 .col-4 { 
 	width: 25%; 
