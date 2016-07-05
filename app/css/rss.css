@@ -7,7 +7,7 @@
   margin-top: 80px;
 }
 .small {
-    font-size:11px;
+    font-size:10px;
 }
 
 h4 {
@@ -28,14 +28,13 @@ li.item {
   padding: 5px;
   background-color: #EFEFEF;
   margin-bottom: 10px;
-  border-radius: 5px;
-  border-left: 4px solid #EFEFEF;
-  border-right: 4px solid #EFEFEF;
+  min-width: 0px;
+
 }
 
 li.item:hover {
   border-color: #428bca;
-  background-color: SteelBlue  ;
+  background-color: #333  ;
 }
 
 li.item h5, li.item p {
@@ -45,4 +44,29 @@ li.item h5, li.item p {
 
 #rss {
   min-height: 488px;
+}
+
+.button {
+    background-color: #333; 
+    border: none;
+    color: white;
+    padding: 8px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.but {
+  margin-left: 40px;
+}
+
+.panel > .panel-heading {
+    background-image: none;
+    background-color: #333;
+    color: white;
+}
+.panel,.panel-heading {
+
+  border-radius: 0;
 }

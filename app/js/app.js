@@ -4,7 +4,8 @@
 var myApp = angular.module('myApp', [
   'ngRoute', // All routing, navigating in the app goes here
   'myControllers', // Our beloved controller module collection
-  'myServices'
+  'myServices',
+  'ngAnimate'
 ]);
 
 myApp.config(['$routeProvider', function ($routeProvider) {

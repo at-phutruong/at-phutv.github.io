@@ -7,7 +7,7 @@ myControllers.controller('HomeCtrl', ['$scope', function ($scope) {
 }]);
 
 myControllers.controller("FeedCtrl", ['$scope','FeedService', function ($scope,Feed) {    
-	$scope.loadBtnText="Load";
+	$scope.loadBtnText="Load RSS";
 	$scope.loadFeed=function(e){        
 		Feed.parseFeed($scope.feedSrc).then(function(res){
 			$scope.loadBtnText=angular.element(e.target).text();

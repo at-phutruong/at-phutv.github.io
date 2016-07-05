@@ -5,13 +5,16 @@ input[type=search] {
 	padding: 9px 5px 9px 32px;
 	width: 150px;
 	height: 37px;
-	-webkit-border-radius: 10em;
-	-moz-border-radius: 10em;
-	border-radius: 10em;
+	-webkit-border-radius: 0em;
+	-moz-border-radius: 0em;
+	border-radius: 0em;
 	
 	-webkit-transition: all .5s;
 	-moz-transition: all .5s;
 	transition: all .5s;
+}
+#clipboard {
+	background: #ededed url(/img/clipboard.png) no-repeat 9px center;
 }
 input[type=search]:focus {
 	width: 350px;
