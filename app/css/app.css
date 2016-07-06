@@ -1,6 +1,10 @@
 /* App stylesheet */
 
+.icon-bar {
+  width: 30px;
+  height: 30px;
 
+}
 a.page-scroll:hover {
 	color:#fff;
 }

@@ -27,20 +27,20 @@
           <div class="container">
               <ul class="unstyled">
                   <span class="label label-warning" ng-show="feeds.length > 0">{{(feeds | filter:filterText).length}} Articles</span>
-                                    
-                  <li ng-repeat="feed in feeds | filter:filterText" class="item animate-repeat">
+                  <a href="{{feed.link}}" target="_blank" ng-repeat="feed in feeds | filter:filterText" class="animate-repeat" >              
+                  <li class="item" >
                     <div class="panel panel-default">
                       <div class="panel-heading">
                         <h3 class="panel-title">{{feed.title}}</h3>
                       </div>
                       <div class="panel-body">
-                        <h5><a target='_blank' href="{{feed.link}}"><b class="text-primary"><img class="icon" src="img/link.png">&nbsp;Link:&nbsp;&nbsp;</b>{{feed.link}}</a></h5>
                         <p class="text-left text-danger"><b class="text-primary"><img class="icon" src="img/author.png">&nbsp;Author:&nbsp;&nbsp;</b>{{feed.author}}</p>
                         <p class="text-left text-danger"><b class="text-primary"><img class="icon" src="img/content.png">&nbsp;Content:&nbsp;&nbsp;</b>{{feed.contentSnippet}}</p>
                         <p class="small">{{feed.publishedDate}}</p>
                       </div>
                     </div>
-                  </li>              
+                  </li>   
+                  </a>             
               </ul>            
           </div>
       </div>

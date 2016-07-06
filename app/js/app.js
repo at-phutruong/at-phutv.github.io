@@ -18,6 +18,10 @@ myApp.config(['$routeProvider', function ($routeProvider) {
       templateUrl: 'view/rss.html',
       controller: 'FeedCtrl',
     })
+    .when('/bookmark', {
+      templateUrl: 'view/bookmarks.html',
+      controller: 'BookmarkCtrl',
+    })
     // any link goes beyond defined routes will be redirected to /people route.
     .otherwise({
       redirectTo: '/home'

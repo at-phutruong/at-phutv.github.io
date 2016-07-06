@@ -1,0 +1,72 @@
+[
+  {
+    "title": "Smashing Magazine",
+    "url": "http://smashingmagazine.com",
+    "img": "img/news.png",
+    "category": "Web Design",
+    "likes": 2
+  },
+  {
+    "title": "Reddit",
+    "url": "http://reddit.com",
+    "img": "img/forum.png",
+    "category": "Community",
+    "likes": 1
+  },
+  {
+    "title": "CNN",
+    "url": "http://cnn.com",
+    "img": "img/news.png",
+    "category": "News",
+    "likes": 10
+  },
+  {
+    "title": "A List Apart",
+    "url": "http://alistapart.com",
+    "img": "img/social.png",
+    "category": "Web Design",
+    "likes": 15
+  },
+  {
+    "title": "CodePen",
+    "url": "http://codepen.io",
+    "img": "img/news.png",
+    "category": "Web Design",
+    "likes": 3
+  },
+    {
+    "title": "Smashing Magazine",
+    "url": "http://smashingmagazine.com",
+    "img": "img/news.png",
+    "category": "Web Design",
+    "likes": 2
+  },
+  {
+    "title": "Reddit",
+    "url": "http://reddit.com",
+    "img": "img/forum.png",
+    "category": "Community",
+    "likes": 1
+  },
+  {
+    "title": "CNN",
+    "url": "http://cnn.com",
+    "img": "img/news.png",
+    "category": "News",
+    "likes": 10
+  },
+  {
+    "title": "A List Apart",
+    "url": "http://alistapart.com",
+    "img": "img/social.png",
+    "category": "Web Design",
+    "likes": 15
+  },
+  {
+    "title": "CodePen",
+    "url": "http://codepen.io",
+    "img": "img/news.png",
+    "category": "Web Design",
+    "likes": 3
+  }
+]

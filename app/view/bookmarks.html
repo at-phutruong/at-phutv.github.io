@@ -1,0 +1,38 @@
+<div id="bk">
+	<div class="col-md-3">
+		<form action="">
+			<div class="form-group">
+				<input type="search" placeholder="Search Bookmark">
+			</div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Add</h3>
+        </div>
+        <div class="panel-body">
+          <input type="text" class="form-control" placeholder="Name"  ng-required=true ng-model='name'>
+          <input type="text" class="form-control" placeholder="URL"  ng-required=true ng-model='url'>
+          <input type="text" class="form-control" placeholder="Category"  ng-required=true ng-model='category'>
+        </div>
+        <button class="btn btn-primary" ng-click='addBookmark()'>Add Bookmark</button>
+      </div>
+		</form>
+	</div>
+	<div class="col-md-9">
+		<div class="row">
+			<div class="col-md-3" ng-repeat='bookmark in bookmarks | filter:bookSearch'>
+				<div class="thumbnail">
+					<a href="{{bookmark.url}}">
+						<img src='{{bookmark.img}}'>
+					</a>
+					<div>
+            {{bookmark.title}}
+						<span class="label label-primary">{{bookmark.category}}</span>
+            <img src="img/trash.png">
+					</div>
+
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</div>
