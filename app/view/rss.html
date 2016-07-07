@@ -1,47 +1,44 @@
- <div id='rss' class="container-fluid" >
-      <div id="t">
-          <div class="container">
-            <h4>Feed RSS via Google Feed API by using AngularJS</h4>
- 
-            <form>
-              <div class="input-prepend">
-                <div class="btn-group">
-                  <button class="button but" type="button" tabindex="-1" ng-click="loadFeed($event)">{{loadBtnText}}</button><!-- 
-                   --><button class="button dropdown-toggle" data-toggle="dropdown" tabindex="-1">
-                    <span class="caret"></span>
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li><a href="#/rss" ng-click="feedSrc='http://feeds.bbci.co.uk/news/world/rss.xml';loadFeed($event)">BBC News</a></li>
-                    <li><a href="#/rss" ng-click="feedSrc='http://feeds.feedburner.com/TEDTalks_video';loadFeed($event)">TED videos</a></li>
-                    <li><a href="#/rss" ng-click="feedSrc='http://feeds.nationalgeographic.com/ng/photography/photo-of-the-day/';loadFeed($event);">NEO photos</a></li>
-                    <li><a href="#/rss" ng-click="feedSrc='http://www.nytimes.com/services/xml/rss/nyt/HomePage.xml';loadFeed($event)">NYTimes News</a></li>
-                  </ul>
-                </div>
-                <input id='clipboard' type="search" class="span6" autocomplete="off" placeholder="Enter feed URL" data-ng-model="feedSrc" />
-                <input class='pull-right' type="search" placeholder="Search" data-ng-model="filterText">
-              </div>
-            </form>
-
-          </div>  
-        
-          <div class="container">
-              <ul class="unstyled">
-                  <span class="label label-warning" ng-show="feeds.length > 0">{{(feeds | filter:filterText).length}} Articles</span>
-                  <a href="{{feed.link}}" target="_blank" ng-repeat="feed in feeds | filter:filterText" class="animate-repeat" >              
-                  <li class="item" >
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <h3 class="panel-title">{{feed.title}}</h3>
-                      </div>
-                      <div class="panel-body">
-                        <p class="text-left text-danger"><b class="text-primary"><img class="icon" src="img/author.png">&nbsp;Author:&nbsp;&nbsp;</b>{{feed.author}}</p>
-                        <p class="text-left text-danger"><b class="text-primary"><img class="icon" src="img/content.png">&nbsp;Content:&nbsp;&nbsp;</b>{{feed.contentSnippet}}</p>
-                        <p class="small">{{feed.publishedDate}}</p>
-                      </div>
-                    </div>
-                  </li>   
-                  </a>             
-              </ul>            
+<div id='rss' class="container-fluid" >
+  <div id="t">
+    <div class="container">
+      <h4>Feed RSS via Google Feed API by using AngularJS</h4>
+      <form>
+        <div class="input-prepend">
+          <div class="btn-group">
+            <button class="button but" type="button" tabindex="-1" ng-click="loadFeed($event)">{{loadBtnText}}</button><!-- 
+             --><button class="button dropdown-toggle" data-toggle="dropdown" tabindex="-1"><span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="#/rss" ng-click="feedSrc='http://feeds.bbci.co.uk/news/world/rss.xml';loadFeed($event)">BBC News</a></li>
+              <li><a href="#/rss" ng-click="feedSrc='http://feeds.feedburner.com/TEDTalks_video';loadFeed($event)">TED videos</a></li>
+              <li><a href="#/rss" ng-click="feedSrc='http://feeds.nationalgeographic.com/ng/photography/photo-of-the-day/';loadFeed($event);">NEO photos</a></li>
+              <li><a href="#/rss" ng-click="feedSrc='http://www.nytimes.com/services/xml/rss/nyt/HomePage.xml';loadFeed($event)">NYTimes News</a></li>
+            </ul>
           </div>
-      </div>
+          <input id='clipboard' type="search" class="span6" autocomplete="off" placeholder="Enter feed URL" data-ng-model="feedSrc" />
+          <input class='pull-right' type="search" placeholder="Search" data-ng-model="filterText">
+        </div>
+      </form>
+    </div>  
+    
+    <div class="container">
+        <ul class="unstyled">
+          <span class="label label-warning" ng-show="feeds.length > 0">{{(feeds | filter:filterText).length}} Articles</span>
+          <a href="{{feed.link}}" target="_blank" ng-repeat="feed in feeds | filter:filterText" class="animate-repeat" >          
+          <li class="item" >
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">{{feed.title}}</h3>
+              </div>
+              <div class="panel-body">
+                <p class="text-left text-danger"><b class="text-primary"><img class="icon" src="img/author.png">&nbsp;Author:&nbsp;&nbsp;</b>{{feed.author}}</p>
+                <p class="text-left text-danger"><b class="text-primary"><img class="icon" src="img/content.png">&nbsp;Content:&nbsp;&nbsp;</b>{{feed.contentSnippet}}</p>
+                <p class="small">{{feed.publishedDate}}</p>
+              </div>
+            </div>
+          </li>   
+          </a>             
+        </ul>            
+    </div>
   </div>
+</div>
