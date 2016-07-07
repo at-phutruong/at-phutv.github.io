@@ -1,5 +1,5 @@
 /* App stylesheet */
-
+/*===============Navigation==============*/
 .logo {
 	margin-top: 5px;
 }
@@ -13,15 +13,28 @@
   height: 30px;
 
 }
+nav {
+  background-color: #000000;
+}
 
-a.page-scroll:hover {
-	color:#fff;
+
+/*===============Header==============*/
+#hd {  
+  border-bottom: 1px #ccc 
 }
-#about a:hover {
-	color:#fff;
+#hd h1 { 
+  font-size: 48px; 
+  text-transform: uppercase; 
+  letter-spacing: 3px; 
 }
+#hd h2 { 
+  text-transform: uppercase; 
+  letter-spacing: 2px; 
+}
+
+
+/*===============Body==============*/
 body {
-
   padding-top: 20px;
   background-color: #fff;
   position: static;
@@ -29,10 +42,8 @@ body {
   width: 100%;
 
 }
-nav {
-	background-color: #000000;
-}
 
+/*===============Footer==============*/
 .footer {
 	text-align: center;
 	width:100%;
@@ -47,47 +58,128 @@ nav {
 	font-size: 15px;
 
 }
-html {
-	overflow-x: hidden;
+
+a.page-scroll:hover {
+  color:#fff;
+}
+#about a:hover {
+  color:#fff;
 }
 
-.icon {
-	height: 13px;
-	width: 13px;
-}
-
-
-/*======================================*/
+/*=================Icon=====================*/
 
 .icon-bar {
-	margin: 300px 200px  0px 0px;
-	border-top-right-radius:20px;
-    border-bottom-right-radius:20px;
-	position: fixed;
-    width: 50px;
-    text-align: center;
-    border: solid 1px;
-    opacity: 0.5;
+  margin: 300px 200px  0px 0px;
+  border-top-right-radius:20px;
+  border-bottom-right-radius:20px;
+  position: fixed;
+  width: 50px;
+  text-align: center;
+  border: solid 1px;
+  background-color: #fff;
 }
 
 .icon-bar a {
-    padding: 10px;
-    display: block;
-    transition: all 1s ease;
-    color: white;
-    font-size: 30px;
+  padding: 10px;
+  display: block;
+  transition: all 1s ease;
+  color: white;
+  font-size: 30px;
+
 }
 
 .icon-bar a:hover {
-    background-color: #333;
-    padding-right: 70px;
-    border-top-right-radius:120px;
-    border-bottom-right-radius:120px;
+  background-color: #333;
+  padding-right: 70px;
+  border-top-right-radius:120px;
+  border-bottom-right-radius:120px;
 }
 
 .active {
-    background-color: #4CAF50 !important;
+  background-color: #4CAF50 !important;
 }
 
+/*================= core typography and style =======*/
+h2 { 
+  font-size: 152% 
+}
+.article {
+  color:#fff;
+}
+h3, h4 { 
+  font-size: 122%; 
+}
+h1, h2, h3, h4 { 
+  color: #333; 
+}
+p { 
+  font-size: 100%; 
+  line-height: 18px; 
+  padding-right: 3em; 
+}
+a { 
+  color: #990003 
+}
+a:hover { 
+  text-decoration: none; 
+  color: #428bca;
+}
+strong { 
+  font-weight: bold; 
+}
+li { 
+  line-height: 24px; 
+  border-bottom: 1px #ccc; 
+}
+p.enlarge { 
+  font-size: 144%; 
+  padding-right: 6.5em; 
+  line-height: 24px; 
+}
+p.enlarge span { 
+  color: #000 
+}
+
+.last { 
+  border-bottom: 0;
+  border: none;
+}
+
+.col-4 { 
+  width: 25%; 
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+.col-3 { 
+  width: 33%; 
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+.box {
+  margin: 0 30px;
+  
+}
+#last {
+  border-bottom: 0;
+}
+.box ul{
+  list-style-type: none;
+}
+  .col-4 li {
+  line-height: 24px; 
+  border-bottom: 1px solid #ccc;
+}
+.title {
+  border-bottom: 1px solid #ccc;
+  font-style: italic;
+}
+.para {
+  margin-top: 10px;
+}
+.para p::first-letter {
+    font-size: 33px;
+}
 
 

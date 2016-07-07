@@ -4,69 +4,41 @@
     "url": "http://smashingmagazine.com",
     "img": "img/news.png",
     "category": "Web Design",
-    "likes": 2
+    "star": 5
   },
   {
     "title": "Reddit",
     "url": "http://reddit.com",
     "img": "img/forum.png",
     "category": "Community",
-    "likes": 1
+    "star": 1
   },
   {
     "title": "CNN",
     "url": "http://cnn.com",
     "img": "img/news.png",
     "category": "News",
-    "likes": 10
+    "star": 2
   },
   {
     "title": "A List Apart",
     "url": "http://alistapart.com",
     "img": "img/social.png",
     "category": "Web Design",
-    "likes": 15
+    "star": 3
   },
   {
     "title": "CodePen",
     "url": "http://codepen.io",
     "img": "img/news.png",
     "category": "Web Design",
-    "likes": 3
+    "star": 4
   },
     {
-    "title": "Smashing Magazine",
-    "url": "http://smashingmagazine.com",
-    "img": "img/news.png",
-    "category": "Web Design",
-    "likes": 2
-  },
-  {
-    "title": "Reddit",
-    "url": "http://reddit.com",
-    "img": "img/forum.png",
-    "category": "Community",
-    "likes": 1
-  },
-  {
-    "title": "CNN",
-    "url": "http://cnn.com",
+    "title": "OMGUbuntu",
+    "url": "http://www.omgubuntu.co.uk/",
     "img": "img/news.png",
     "category": "News",
-    "likes": 10
-  },
-  {
-    "title": "A List Apart",
-    "url": "http://alistapart.com",
-    "img": "img/social.png",
-    "category": "Web Design",
-    "likes": 15
-  },
-  {
-    "title": "CodePen",
-    "url": "http://codepen.io",
-    "img": "img/news.png",
-    "category": "Web Design",
-    "likes": 3
+    "star": 5
   }
 ]

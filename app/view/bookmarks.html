@@ -8,26 +8,28 @@
         <div class="panel-body panel-body-bk">
           <input type="text" class="form-control" placeholder="Name" ng-model='name'><br>	
           <input type="text" class="form-control" placeholder="URL" ng-model='url'><br>
-          <select  ng-model="category" ng-init="category = names[0]" ng-options="item for item in names" class="selectpicker" >Category</select>
+          <select  ng-model="category" ng-init="category = names[0]" ng-options="item for item in names" class="selectpicker" >Category</select><br><br>
+          <select  ng-model="star" ng-init="star = stars[0]" ng-options="item for item in stars" class="selectpicker" >Category</select>
           <br><br><button class="btn btn-warning" ng-click='addBookmark()'>Add Bookmark</button>
         </div>
       </div>
 		</form>
 		<div class="form-group">
-				<input id='bkSearch' type="search" placeholder="Search Bookmark" ng-model='bookSearch'>
+			<input id='bkSearch' type="search" placeholder="Search Bookmark" ng-model='bookSearch'>
 		</div>
 	</div>
 	<div class="col-md-9">
 		<div class="row">
 			<div class="col-md-3" ng-repeat='bookmark in bookmarks | filter:bookSearch'>
 				<div class="thumbnail">
-					<a href="{{bookmark.url}}">
+					<a href="{{bookmark.url}}" target="_blank">
 						<img src='{{bookmark.img}}'>
 					</a>
 					<div class="caption-thumbnail">
-           		<div class="title">{{bookmark.title}}</div>
-							<span class="label label-primary">{{bookmark.category}}</span>
-            	<img class='trash' src="img/trash.png" ng-click='deleteBookmark($index)'>
+         		<div class="title">{{bookmark.title}}</div>
+         		<div><img src='{{chooseStar(bookmark.star)}}' class="star"></div>
+						<span class="label label-primary">{{bookmark.category}}</span>
+          	<img class='trash' src="img/trash.png" ng-click='deleteBookmark($index)'>
 					</div>
 				</div>
 			</div>

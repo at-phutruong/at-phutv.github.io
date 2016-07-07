@@ -1,7 +1,7 @@
 <div id='rss' class="container-fluid" >
   <div id="t">
     <div class="container">
-      <h4>Feed RSS via Google Feed API by using AngularJS</h4>
+      <h4 class="article">Feed RSS via Google Feed API by using AngularJS</h4>
       <form>
         <div class="input-prepend">
           <div class="btn-group">
@@ -10,9 +10,11 @@
             </button>
             <ul class="dropdown-menu">
               <li><a href="#/rss" ng-click="feedSrc='http://feeds.bbci.co.uk/news/world/rss.xml';loadFeed($event)">BBC News</a></li>
-              <li><a href="#/rss" ng-click="feedSrc='http://feeds.feedburner.com/TEDTalks_video';loadFeed($event)">TED videos</a></li>
-              <li><a href="#/rss" ng-click="feedSrc='http://feeds.nationalgeographic.com/ng/photography/photo-of-the-day/';loadFeed($event);">NEO photos</a></li>
+              <li><a href="#/rss" ng-click="feedSrc='http://feeds.feedburner.com/TEDTalks_video';loadFeed($event)">TED Videos</a></li>
+              <li><a href="#/rss" ng-click="feedSrc='http://feeds.nationalgeographic.com/ng/photography/photo-of-the-day/';loadFeed($event);">NEO Photos</a></li>
               <li><a href="#/rss" ng-click="feedSrc='http://www.nytimes.com/services/xml/rss/nyt/HomePage.xml';loadFeed($event)">NYTimes News</a></li>
+              <li><a href="#/rss" ng-click="feedSrc='http://vnexpress.net/rss/tin-moi-nhat.rss';loadFeed($event)">VNExpress</a></li>
+              <li><a href="#/rss" ng-click="feedSrc='http://ictnews.vn/rss/cntt';loadFeed($event)">ICTNews CNTT</a></li>
             </ul>
           </div>
           <input id='clipboard' type="search" class="span6" autocomplete="off" placeholder="Enter feed URL" data-ng-model="feedSrc" />

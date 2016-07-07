@@ -1,19 +1,35 @@
 [
-    {
-        "alt":"Glorious Eiffel Tower",
-        "id":"01",
-        "caption":"Constructed in 1889 as the entrance to the 1889 World's Fair, it was initially criticized by some of France's leading artists and intellectuals for its design, but it has become a global cultural icon of France and one of the most recognisable structures in the world.[3] The Eiffel Tower is the most-visited paid monument in the world; 6.91 million people ascended it in 2015.",
-        "src":"img/Eiffel.jpg"
-    },
-    {
-        "alt":"Fall in central Canadia",
-        "id":"02",
-        "caption":"Autumn, also known as fall in North America,[1] is one of the four temperate seasons. Autumn marks the transition from summer into winter, in September (Northern Hemisphere) or March (Southern Hemisphere), when the arrival of night becomes noticeably earlier and the temperature cools considerably. One of its main features is the shedding of leaves from deciduous trees.",
-        "src":"img/Fall.jpg"
-    },{
-        "alt":"Lives in Modern City",
-        "id":"03",
-        "caption":"A city is a large and permanent human settlement.[1][2] Although there is no agreement on how a city is distinguished from a town in general English language meanings, many cities have a particular administrative, legal, or historical status based on local law.",
-        "src":"img/City.jpg"
-    }
+  {
+    "alt":"Wooden Church in My Hometown",
+    "id":"01",
+    "caption":"Nhà thờ chính tòa Kon Tum hay còn được gọi là nhà thờ Gỗ, là một nhà thờ Giáo hội Công giáo nằm ở thành phố Kon Tum, tỉnh Kon Tum, Việt Nam. Nhà thờ được xây dựng vào năm 1913 do các linh mục người Pháp khởi xướng, hiện nay dùng làm nhà thờ chính tòa, nơi đặt ngai tòa của vị giám mục giáo phận Kon Tum.",
+    "src":"img/woodenChurch.jpg",
+    "info":"https://vi.wikipedia.org/wiki/Nh%C3%A0_th%E1%BB%9D_ch%C3%ADnh_t%C3%B2a_Kon_Tum"
+  },
+  {
+    "alt":"Glorious Eiffel Tower",
+    "id":"02",
+    "caption":"Constructed in 1889 as the entrance to the 1889 World's Fair, it was initially criticized by some of France's leading artists and intellectuals for its design, but it has become a global cultural icon of France and one of the most recognisable structures in the world.[3] The Eiffel Tower is the most-visited paid monument in the world; 6.91 million people ascended it in 2015.",
+    "src":"img/Eiffel.jpg",
+    "info":"https://en.wikipedia.org/wiki/Eiffel_Tower"
+  },
+  {
+    "alt":"Fall in central Canadia",
+    "id":"03",
+    "caption":"Autumn, also known as fall in North America,[1] is one of the four temperate seasons. Autumn marks the transition from summer into winter, in September (Northern Hemisphere) or March (Southern Hemisphere), when the arrival of night becomes noticeably earlier and the temperature cools considerably. One of its main features is the shedding of leaves from deciduous trees.",
+    "src":"img/Fall.jpg",
+    "info":"https://en.wikipedia.org/wiki/Autumn"
+  },{
+    "alt":"Lives in Modern City",
+    "id":"04",
+    "caption":"A city is a large and permanent human settlement.[1][2] Although there is no agreement on how a city is distinguished from a town in general English language meanings, many cities have a particular administrative, legal, or historical status based on local law.",
+    "src":"img/City.jpg",
+    "info":"https://en.wikipedia.org/wiki/City"
+  },{
+    "alt":"Ma Chao The Splendid",
+    "id":"05",
+    "caption":"Ma Chao (176–222),[1][2] courtesy name Mengqi, was a military general and warlord who lived in the late Eastern Han dynasty and early Three Kingdoms period. He also appears as a prominent character in Luo Guanzhong's historical novel Romance of the Three Kingdoms, as one of the Five Tiger Generals under Liu Bei.",
+    "src":"img/machao.jpg",
+    "info":"https://en.wikipedia.org/wiki/Ma_Chao"
+  }
 ]
