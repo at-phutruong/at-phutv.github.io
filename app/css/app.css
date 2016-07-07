@@ -1,6 +1,6 @@
 /* App stylesheet */
 
-.icon-bar {
+.icon-nav {
   width: 30px;
   height: 30px;
 
@@ -47,52 +47,37 @@ html {
 	width: 13px;
 }
 
-/*=================Animation===================*/
 
-.example-animate-container {
-  background:white;
-  border:1px solid black;
-  list-style:none;
-  margin:0;
-  padding:0 10px;
+/*======================================*/
+
+.icon-bar {
+	margin: 300px 200px  0px 0px;
+	border-top-right-radius:20px;
+    border-bottom-right-radius:20px;
+	position: fixed;
+    width: 50px;
+    text-align: center;
+    background-color: #888;
 }
- 
-.animate-repeat {
-  line-height:40px;
-  list-style:none;
-  box-sizing:border-box;
-}
- 
-.animate-repeat.ng-move,
-.animate-repeat.ng-enter,
-.animate-repeat.ng-leave {
-    -webkit-transition: 700ms  cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
-    -moz-transition: 700ms  cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
-    -ms-transition: 700ms  cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
-    -o-transition: 700ms  cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
-    transition: 700ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
-    position: relative;
+
+.icon-bar a {
+    padding: 10px;
     display: block;
-    overflow: hidden;
-    text-overflow: clip;
-    white-space:nowrap;
+    transition: all 1s ease;
+    color: white;
+    font-size: 30px;
 }
- 
-.animate-repeat.ng-leave.ng-leave-active,
-.animate-repeat.ng-move,
-.animate-repeat.ng-enter {
-    opacity: 0;
-    width: 0px;
-    max-height: 0px;
-}
- 
-.animate-repeat.ng-leave,
-.animate-repeat.ng-move.ng-move-active,
-.animate-repeat.ng-enter.ng-enter-active {
 
-    opacity: 1;
-    width: 450px;
-    max-height: 200px;
+.icon-bar a:hover {
+    background-color: aqua;
+    padding-right: 70px;
+    border-top-right-radius:120px;
+    border-bottom-right-radius:120px;
 }
+
+.active {
+    background-color: #4CAF50 !important;
+}
+
 
 

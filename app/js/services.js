@@ -21,3 +21,14 @@ myServices.factory('Bookmark', ['$resource', function ($resource) {
     }
   });
 }]);
+
+myServices.factory('DataSource', ['$http',function($http){
+       return {
+           get: function(fileName,callback){
+                $http.get(fileName).
+                success(function(data, status) {
+                    callback(data);
+                });
+           }
+       };
+    }]);

@@ -4,13 +4,17 @@
   <link rel="icon" type="image/x-icon" href="img/favicon.ico"/>
   <meta charset="UTF-8">
   <title>Home Page</title>
+  <script src="js/jquery.js"></script>
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/app.css" charset="utf-8">
   <script src="bower_components/angular/angular.min.js" charset="utf-8"></script>
   <script src="bower_components/angular-route/angular-route.min.js" charset="utf-8"></script>
   <script src="bower_components/angular-resource/angular-resource.min.js" charset="utf-8"></script>
   <script src="bower_components/angular-animate/angular-animate.min.js" charset="utf-8"></script>
-  <script src="bower_components/ngstorage/ngStorage.js" charset="utf-8"></script> 
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js" charset="utf-8"></script>
+  <script src="bower_components/angular-carousel/src/angular-carousel.js" charset="utf-8"></script>
+  <script src="bower_components/angular-touch/angular-touch.js" charset="utf-8"></script>
+
 
   
     <!-- Bootstrap Core CSS -->
@@ -22,8 +26,11 @@
     <link href="css/resume.css" rel="stylesheet">
     <link href="css/rss.css" rel="stylesheet">
     <link href="css/bookmark.css" rel="stylesheet">
+    <link href="css/slide.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="bower_components/angular-carousel/src/css/angular-carousel.scss">
+
         <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
@@ -44,12 +51,16 @@
     <div ng-controller="HeaderPartialCtrl">
       <div ng-include src="'view/partial/header.html'"></div>
     </div>
+    <div ng-controller="IconBarPartialCtrl">
+      <div ng-include src="'view/partial/icon-bar.html'"></div>
+    </div>
     <div class="row">
-      <div ng-view></div>
+      <div ui-view></div>
     </div>
     <div ng-controller="FooterPartialCtrl">
       <div ng-include src="'view/partial/footer.html'"></div>
     </div>
   </div>
+
 </body>
 </html>

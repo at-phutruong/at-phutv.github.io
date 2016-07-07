@@ -35,7 +35,6 @@ myControllers.controller('BookmarkCtrl', ['$scope', 'Bookmark' ,
     $scope.increment = function ($index) {
       $scope.likes++;
     };
-    
   
     $scope.addBookmark = function () {
       $scope.bookmarks.push({
@@ -53,5 +52,17 @@ myControllers.controller('BookmarkCtrl', ['$scope', 'Bookmark' ,
         var bookmark = $scope.bookmarks[id];
         $scope.bookmarks.splice(id, 1);
     }
+  }
+]);
+
+
+myControllers.controller('GalleryController',[ '$scope', 'DataSource' ,
+  function($scope,DataSource) {
+
+      $scope.links =[
+     { src:"http://www.conceptcarz.com/images/Suzuki/suzuki-concept-kizashi-3-2008-01-800.jpg", alt:"", caption:"ssss"},
+     { src:"http://www.conceptcarz.com/images/Volvo/2009_Volvo_S60_Concept-Image-01-800.jpg", alt:"", caption:"sssss"},
+     { src:"http://www.sleepzone.ie/uploads/images/PanelImages800x400/TheBurren/General/sleepzone_hostels_burren_800x400_14.jpg", alt:"", caption:"sssssss"},
+  ];
   }
 ]);
