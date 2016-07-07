@@ -10,7 +10,7 @@ myServices.factory('FeedService',['$http',function($http){
 	}
 }]);
 
-myServices.factory('Bookmark', ['$resource', function ($resource) {
+myServices.factory('BookmarkService', ['$resource', function ($resource) {
   return $resource('data/:requestParam.json', {}, {
     query: {
       method: 'GET',
@@ -22,7 +22,7 @@ myServices.factory('Bookmark', ['$resource', function ($resource) {
   });
 }]);
 
-myServices.factory('ImageSource', ['$resource', function ($resource) {
+myServices.factory('ImageSourceService', ['$resource', function ($resource) {
   return $resource('data/:requestParam.json', {}, {
     query: {
       method: 'GET',

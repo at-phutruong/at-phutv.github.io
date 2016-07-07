@@ -20,11 +20,11 @@ myControllers.controller("FeedCtrl", ['$scope','FeedService', function ($scope,F
   }
 }]);
 
-myControllers.controller('BookmarkCtrl', ['$scope', 'Bookmark' ,
-	function ($scope, Bookmark) {
+myControllers.controller('BookmarkCtrl', ['$scope', 'BookmarkService' ,
+	function ($scope, BookmarkService) {
     $scope.names = ["News", "Community", "Web Design"];
     // So, we do query and get expected data back
-    $scope.bookmarks = Bookmark.query(function (data) {
+    $scope.bookmarks = BookmarkService.query(function (data) {
       // angular.forEach(data, function (value, key) {
       //   if (!value.image) {
       //     value.image = 'http://placehold.it/200?text=' + value.fullName;
@@ -51,7 +51,7 @@ myControllers.controller('BookmarkCtrl', ['$scope', 'Bookmark' ,
           break;
         default:
           image='http://placehold.it/200?text='+$scope.category;
-          
+
       }
    
 
@@ -75,9 +75,13 @@ myControllers.controller('BookmarkCtrl', ['$scope', 'Bookmark' ,
 ]);
 
 
-myControllers.controller('GalleryController',[ '$scope', 'ImageSource' ,
-  function($scope,ImageSource) {
-  $scope.links = ImageSource.query(function (data) {
+myControllers.controller('GalleryCtrl',[ '$scope', 'ImageSourceService' ,
+  function($scope,ImageSourceService) {
+  $scope.links = ImageSourceService.query(function (data) {
   });
   }
 ]);
+
+
+myControllers.controller('MapCtrl', ['$scope', function ($scope) {
+}]);

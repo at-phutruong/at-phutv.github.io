@@ -30,7 +30,12 @@ myApp.config(['$stateProvider', '$urlRouterProvider',function ($stateProvider, $
     .state('slide', {
       url: '/slide',
       templateUrl: 'view/slide.html',
-      controller: 'GalleryController',
+      controller: 'GalleryCtrl',
+    })
+    .state('map', {
+      url: '/map',
+      templateUrl: 'view/map.html',
+      controller: 'MapCtrl',
     });
     // any link goes beyond defined routes will be redirected to /people route.
     $urlRouterProvider.otherwise('/home');

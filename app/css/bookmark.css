@@ -3,8 +3,26 @@
 	padding-left: 40px;
 	min-height: 488px;
 }
+.trash {
 
+}
 .trash:hover {
 	background-image: url('../img/author.png');
 	cursor: pointer;
+}
+.selectpicker{
+	background-color: #fff;
+	width: 260px;
+	height: 35px;
+	border-radius: 5px;
+	font-family:  Helvetica, sans-serif;
+}
+.panel-body {
+	background-color: #ddd;
+}
+.col-md-9 {
+	background-color: #ddd;
+}
+.caption-thumbnail {
+	text-align: center;
 }

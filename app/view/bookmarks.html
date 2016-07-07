@@ -9,11 +9,12 @@
           <h3 class="panel-title">Add</h3>
         </div>
         <div class="panel-body">
-          <input type="text" class="form-control" placeholder="Name"  ng-required=true ng-model='name'>
-          <input type="text" class="form-control" placeholder="URL"  ng-required=true ng-model='url'>
-          <select ng-model="category" ng-init="category = names[0]" ng-options="item for item in names">Category</select>
+          <input type="text" class="form-control" placeholder="Name" ng-model='name'><br>	
+          <input type="text" class="form-control" placeholder="URL" ng-model='url'><br>
+          <select  ng-model="category" ng-init="category = names[0]" ng-options="item for item in names" class="selectpicker" >Category</select>
+          <br><br><button class="btn btn-warning" ng-click='addBookmark()'>Add Bookmark</button>
         </div>
-        <button class="btn btn-primary" ng-click='addBookmark()'>Add Bookmark</button>
+        
       </div>
 		</form>
 	</div>
@@ -24,10 +25,10 @@
 					<a href="{{bookmark.url}}">
 						<img src='{{bookmark.img}}'>
 					</a>
-					<div>
-            {{bookmark.title}}
-						<span class="label label-primary">{{bookmark.category}}</span>
-            <img class='trash' src="img/trash.png" ng-click='deleteBookmark($index)'>
+					<div class="caption-thumbnail">
+           					 {{bookmark.title}}<br>
+							<span class="label label-primary">{{bookmark.category}}</span>
+            				<img class='trash' src="img/trash.png" ng-click='deleteBookmark($index)'>
 					</div>
 
 				</div>
