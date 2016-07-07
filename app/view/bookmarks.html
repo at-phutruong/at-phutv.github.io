@@ -2,7 +2,7 @@
 	<div class="col-md-3">
 		<form action="">
 			<div class="form-group">
-				<input type="search" placeholder="Search Bookmark">
+				<input id='bkSearch' type="search" placeholder="Search Bookmark" ng-model='bookSearch'>
 			</div>
       <div class="panel panel-default">
         <div class="panel-heading">
@@ -11,7 +11,7 @@
         <div class="panel-body">
           <input type="text" class="form-control" placeholder="Name"  ng-required=true ng-model='name'>
           <input type="text" class="form-control" placeholder="URL"  ng-required=true ng-model='url'>
-          <input type="text" class="form-control" placeholder="Category"  ng-required=true ng-model='category'>
+          <select ng-model="category" ng-init="category = names[0]" ng-options="item for item in names">Category</select>
         </div>
         <button class="btn btn-primary" ng-click='addBookmark()'>Add Bookmark</button>
       </div>
@@ -27,7 +27,7 @@
 					<div>
             {{bookmark.title}}
 						<span class="label label-primary">{{bookmark.category}}</span>
-            <img src="img/trash.png">
+            <img class='trash' src="img/trash.png" ng-click='deleteBookmark($index)'>
 					</div>
 
 				</div>

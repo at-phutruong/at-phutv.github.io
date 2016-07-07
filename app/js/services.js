@@ -22,13 +22,14 @@ myServices.factory('Bookmark', ['$resource', function ($resource) {
   });
 }]);
 
-myServices.factory('DataSource', ['$http',function($http){
-       return {
-           get: function(fileName,callback){
-                $http.get(fileName).
-                success(function(data, status) {
-                    callback(data);
-                });
-           }
-       };
-    }]);
+myServices.factory('ImageSource', ['$resource', function ($resource) {
+  return $resource('data/:requestParam.json', {}, {
+    query: {
+      method: 'GET',
+      params: {
+        requestParam: 'images'
+      },
+      isArray: true,
+    }
+  });
+}]);

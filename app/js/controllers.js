@@ -22,6 +22,7 @@ myControllers.controller("FeedCtrl", ['$scope','FeedService', function ($scope,F
 
 myControllers.controller('BookmarkCtrl', ['$scope', 'Bookmark' ,
 	function ($scope, Bookmark) {
+    $scope.names = ["News", "Community", "Web Design"];
     // So, we do query and get expected data back
     $scope.bookmarks = Bookmark.query(function (data) {
       // angular.forEach(data, function (value, key) {
@@ -37,15 +38,33 @@ myControllers.controller('BookmarkCtrl', ['$scope', 'Bookmark' ,
     };
   
     $scope.addBookmark = function () {
+      var image;
+      switch($scope.category){
+        case 'News':
+          image="img/news.png";
+          break;
+        case 'Community':
+          image="img/forum.png";
+          break;
+        case 'Web Design':
+          image="img/social.png";
+          break;
+        default:
+          image='http://placehold.it/200?text='+$scope.category;
+          
+      }
+   
+
       $scope.bookmarks.push({
         title: $scope.name,
         url: $scope.url,
         category: $scope.category,
+        img:image,
         likes: 0
       });
       $scope.name = '';
       $scope.url = '';
-      $scope.category = '';
+
     },
     
     $scope.deleteBookmark = function (id) {
@@ -56,13 +75,9 @@ myControllers.controller('BookmarkCtrl', ['$scope', 'Bookmark' ,
 ]);
 
 
-myControllers.controller('GalleryController',[ '$scope', 'DataSource' ,
-  function($scope,DataSource) {
-
-      $scope.links =[
-     { src:"http://www.conceptcarz.com/images/Suzuki/suzuki-concept-kizashi-3-2008-01-800.jpg", alt:"", caption:"ssss"},
-     { src:"http://www.conceptcarz.com/images/Volvo/2009_Volvo_S60_Concept-Image-01-800.jpg", alt:"", caption:"sssss"},
-     { src:"http://www.sleepzone.ie/uploads/images/PanelImages800x400/TheBurren/General/sleepzone_hostels_burren_800x400_14.jpg", alt:"", caption:"sssssss"},
-  ];
+myControllers.controller('GalleryController',[ '$scope', 'ImageSource' ,
+  function($scope,ImageSource) {
+  $scope.links = ImageSource.query(function (data) {
+  });
   }
 ]);

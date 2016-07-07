@@ -17,7 +17,7 @@ input[type=search] {
 	background: #ededed url(/img/clipboard.png) no-repeat 9px center;
 }
 input[type=search]:focus {
-	width: 350px;
+	width: 295px;
 	background-color: #fff;
 	border-color: #66CC75;
 	

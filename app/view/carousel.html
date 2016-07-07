@@ -6,8 +6,16 @@
 
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
-    <div class="item" ng-repeat="link in links">
+    <div class="item hovereffect" ng-repeat="link in links">
       <img ng-src="{{link.src}}" alt="{{link.src}}">
+
+      <div class="overlay">
+        <h2>{{link.alt}}</h2>
+        <p> 
+          <a href="#">Read more at Wiki &#8629;</a>
+        </p> 
+      </div>
+
       <div class="carousel-caption">
        {{link.caption}}
       </div>
