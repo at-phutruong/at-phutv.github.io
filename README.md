@@ -3,4 +3,4 @@ Please read **this** carefully
 Feel free to contact me at any time you want
 > - Facebook:[Facebook](http://facebook.com/phugodness) 
 > - Twitter:[Twitter](http://twitter.com/phugodness)
-#### <i class='icon-upload'></i>FB
+#### <i class="icon-upload"></i> Publish a document
