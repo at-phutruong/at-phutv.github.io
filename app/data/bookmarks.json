@@ -21,6 +21,13 @@
     "star": 2
   },
   {
+    "title": "Codecadamy",
+    "url": "https://www.codecademy.com/",
+    "img": "img/learn.png",
+    "category": "Learning",
+    "star": 4
+  },
+  {
     "title": "A List Apart",
     "url": "http://alistapart.com",
     "img": "img/social.png",
@@ -39,6 +46,13 @@
     "url": "http://www.omgubuntu.co.uk/",
     "img": "img/news.png",
     "category": "News",
+    "star": 5
+  },
+    {
+    "title": "9GAG",
+    "url": "http://www.9gag.com",
+    "img": "img/enter.png",
+    "category": "Entertainment",
     "star": 5
   }
 ]

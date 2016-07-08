@@ -20,7 +20,7 @@ myControllers.controller("FeedCtrl", ['$scope','FeedService', function ($scope,F
 
 myControllers.controller('BookmarkCtrl', ['$scope', 'BookmarkService' ,
 	function ($scope, BookmarkService) {
-    $scope.names = ["Choose Category","News", "Community", "Web Design"];
+    $scope.names = ["Choose Category","News", "Community", "Web Design","Entertaiment","Learning"];
     $scope.stars = ["Choose number of stars",1,2,3,4,5];
     // So, we do query and get expected data back
     $scope.bookmarks = BookmarkService.query(function (data) {
@@ -42,6 +42,12 @@ myControllers.controller('BookmarkCtrl', ['$scope', 'BookmarkService' ,
         case 'Web Design':
           image="img/social.png";
           break;
+        case 'Entertaiment':
+          image="img/enter.png";
+          break;
+        case 'Learning':
+          image="img/learn.png";
+          break;
       }
       switch($scope.star){
         case 1:
@@ -60,7 +66,7 @@ myControllers.controller('BookmarkCtrl', ['$scope', 'BookmarkService' ,
           noOfStar=5;
           break;
       }
-      if($scope.category!="Choose Category" && $scope.star!="Choose number of stars"){
+      if($scope.category!="Choose Category" && $scope.star!="Choose number of stars" && $scope.name!='' && $scope.url!=''){
         $scope.bookmarks.push({
         title: $scope.name,
         url: $scope.url,
